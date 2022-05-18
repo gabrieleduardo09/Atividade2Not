@@ -1,0 +1,24 @@
+T2 – Atividade avaliativa
+Dadas as seguintes classes de entidades no contexto de um sistema para apoio ao registro de ocorrências policiais.
+	•Cidadão (id, nome, número documento, endereço, telefone, email).
+	•Ocorrência (id, data, descrição, local, id_cidadao).
+
+Instruções para desenho de tela:
+	O sistema deve ser composto por uma única tela, que deve apresentar duas tabelas (RF1, RF5) e 4 botões (RF3, RF8) a fim de atender aos requisitos especificados.
+
+Requisitos funcionais (RFs):
+	RF1: O sistema deve exibir todos os cidadãos em ordem alfabética em uma tabela.
+	RF2: O sistema deve possibilitar a deleção de um cidadão ao clicar com o botão direito do mouse, questionando se o usuário deseja confirmar. Ao deletar um cidadão todas as suas ocorrências vinculadas devem ser excluídas também.
+	RF3: O sistema deve possibilitar cadastrar um novo cidadão clicando no botão “Novo cidadão”, incluindo uma nova linha da tabela. A efetivação do cadastro do(s) cliente(s) inserido(s) devem ocorrer ao clicar em um botão “gravar alterações” disposto abaixo da respectiva tabela. Após a ação os Ids gerados pelo banco devem ser preenchidos nas respectivas células.
+	RF4: O sistema deve possibilitar editar dados de clientes já existentes, editando seus registros direto nas células da tabela. As alterações devem ser enviada automaticamente para o banco de dados ao concluir aedição do conteúdo de cada campo.
+	RF5: O sistema deve exibir todas as ocorrências vinculadas aum cidadão (e apenas estas) quando o mesmo for clicado. Esta tabela deve iniciar vazia (nenhum cidadão selecionado).
+	RF6. O sistema deve possibilitar aexclusão de uma ocorrência ao clicar com o botão direito, questionando o usuário se deseja confirmar a ação.
+	RF7. O sistema deve possibilitar editar os dados de uma ocorrência direto em atualizando as células da tabela. As alterações devem ser enviada automaticamente para o banco de dados ao concluir aedição do conteúdo de cada campo.
+	RF8: O sistema deve possibilitar cadastrar uma nova ocorrência para o cliente que estiver selecionado, clicando em um botão “Nova ocorrência”, incluindo uma nova linha na respectiva tabela. Aefetivação do cadastro da(s) ocorrência(s) inserida(s) devem ocorrer ao clicar em um botão “gravar alterações” disposto abaixo da respectiva tabela. Após a ação os Ids gerados pelo banco devem ser preenchidos nasrespectivascélulas.
+	RF9: O sistema deve em suas duas tabelas apresentar todos os campos das entidades, inclusive os ids.
+
+Requisitos não funcionais (RNFs):
+	RNF1: O sistema deve ser feito na linguagem de programação JAVA.
+	RNF2: O sistema deve utilizar as tecnologias JAVA Swing para construção das interfaces
+	RNF3: O sistema deve utilizar o SGBD MySQL para persistir os dados das duas entidades.
+	RNF4: As credenciais de acesso e endereço de conexão do banco de dados deve ficar em um arquivo externo de configuração.
