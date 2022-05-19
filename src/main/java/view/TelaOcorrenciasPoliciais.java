@@ -36,7 +36,6 @@ public class TelaOcorrenciasPoliciais {
 		flCidadao = new FlowLayout(); //FlowLayout.LEADING, FlowLayout.CENTER, ou FlowLayout.TRAILING.
 		frame.setLayout(flCidadao);
 		
-		//String[] table = {"CIDADÃO"};
 		String[] colunasCidadao = {"ID", "NOME", "Nº DOC.", "ENDEREÇO", "TELEFONE", "E-MAIL"};
 		Object[][] linhasDeDadosCidadao = {{"1", "Gabriel", "83728374911", "Hidalgo Junior", "48998256472", "gabriel@gamil.com"},
 				{"2", "Eduardo", "98728374922", "Julio da Luz", "48988256489", "eduardo@gamil.com"}};
